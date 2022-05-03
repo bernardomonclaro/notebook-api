@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It is a API-only project which implements a CRUD-like contacts notebook application. The goal of this project is to use intermediate and advanced concepts on RESTful apis with Ruby on Rails, as well as Rspec test.
 
-Things you may want to cover:
+Concepts used in this project:
 
-* Ruby version
+* CRUD on nested attributes
 
-* System dependencies
+* CORS activation
 
-* Configuration
+* Active Model Serializer
 
-* Database creation
+* JSON:API specification
 
-* Database initialization
+* Include tag to show nested attributes attributes
 
-* How to run the test suite
+* Meta tag to show informtation about the JSON
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Links tag to include links to other related resourses

@@ -16,6 +16,7 @@ class ContactsController < ApplicationController
   # POST /contacts
   def create
     @contact = Contact.new(contact_params)
+
     if @contact.save
       render json: @contact, include: [:kind, :phones, :address], status: :created, location: @contact
     else
@@ -49,7 +50,7 @@ class ContactsController < ApplicationController
   #    :name, :email, :birthdate, :kind_id,
   #   phone_attributes: [:id, :number, :_destroy],
   #    address_attributes: [:id, :street, :city]
-  # )
-    ActiveModelSerializers::Deserialization.jsonapi_parse(params)
+  #)
+    ActiveModelSerializer::Deserialization.jsonapi_parse(params)
   end
 end
